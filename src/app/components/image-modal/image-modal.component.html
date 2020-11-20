@@ -1,0 +1,18 @@
+<div #imageModal class="modal">
+    <span class="modal-content">
+        <img #currentImage [src]="transform(image['image'])" alt="Image" style="width: 80%; height: 80%;"/>
+        <div #interaction>
+            <input #user type="text" style="font-size: 20px; border-radius: 2px;"/>
+            <input type="button" value="Share" style="font-size: 20px; background-color: #5a73f5; border: none; color: #fff;" (click)="share()"/> 
+
+            <input #annotation type="text" style="font-size: 20px; border-radius: 2px;"/>
+            <input type="button" value="Annotate" style="font-size: 20px; background-color: #5dc659; border: none; color: #fff;" (click)="annotate()"/> 
+        </div>
+        <div>
+            <span *ngFor="let annotation of annotations" style="color: #fff; font-size: 20px;">
+                &nbsp;{{ annotation }}&nbsp;
+            </span>
+        </div>
+    </span>
+    <span #close class="close" (click)="closeModal()">&times;</span>
+</div>

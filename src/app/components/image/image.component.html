@@ -1,0 +1,5 @@
+<div style="height: 460px;">
+    <span *ngFor="let image of images" style="margin-left: 5px; margin-right: 5px; cursor: pointer;">
+        <img [src]="transform(image[1])" (click)="open(image)" style="width: 150px; height: 150px;" />
+    </span>
+</div>

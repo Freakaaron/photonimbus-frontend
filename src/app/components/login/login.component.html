@@ -1,0 +1,17 @@
+<div class="login-form">
+    <div class="app-name">
+        <span class="photo">Photo</span>
+        <span class="nimbus">Nimbus</span>
+    </div>
+    <br />
+    <form #loginform="ngForm" (ngSubmit)="login()">
+        <input type="text" placeholder="Username" name="username" class="username" [(ngModel)]="username" />
+        <br />
+        <input type="password" placeholder="Password" name="password" class="password" [(ngModel)]="password" />
+        <br />
+        <input type="submit" class="submit" value="Login" />
+        <br />
+        <br />
+        <br />
+    </form>
+</div>

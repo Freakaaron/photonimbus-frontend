@@ -1,0 +1,8 @@
+<div style="text-align: center;">
+    <h1>Images shared with you</h1>
+    <span *ngFor="let image of images" style="margin-left: 5px; margin-right: 5px; cursor: pointer;">
+        <img [src]="transform(image[1])" (click)="open(image)" style="width: 50px; height: 50px;" />
+    </span>
+    <image-modal [image]="image"></image-modal>
+    <pagination [pages]="pages" (onPageSelect)="displayPage($event)"></pagination>
+</div>

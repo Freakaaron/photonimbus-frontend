@@ -1,0 +1,26 @@
+<h1>
+    Welcome {{ username }}!!!
+</h1>
+<input #searchTerm type="text" style="font-size: 20px; border-radius: 2px;" placeholder="Enter annotation"/>
+<input type="button" value="Search" style="font-size: 20px; background-color: #ff5554; border: none; color: #fff;" (click)="search()"/>
+<br />
+<br />
+<div style="border: 1px solid gray; height: 600px; width: 100%;">
+    <div style="border-right: 1px solid gray; height: 600px; width: 50%; padding-top: 5px; float: left;">
+        <div style="text-align: center;">
+            Upload pictures
+            <image-upload></image-upload>
+        </div>
+        <br />
+        <br />
+        <br />
+        <image [images]="images" (onImageSelect)="displayImageModal($event)"></image>
+        <image-modal [image]="image" [annotations]="annotations"></image-modal>
+        <pagination [pages]="pages" (onPageSelect)="displayPage($event)"></pagination>
+    </div>
+    <div style="width: 49.9%; height: 600px; float: right; ">
+        <users></users>
+    </div>
+</div>
+<others></others>
+
