@@ -13,6 +13,7 @@ import { PaginationComponent } from './components/pagination/pagination.componen
 import { UsersComponent } from './components/users/users.component';
 import { ImageModalComponent } from './components/image-modal/image-modal.component';
 import { OthersComponent } from './components/others/others.component';
+import { RegisterComponent } from './components/register/register.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { OthersComponent } from './components/others/others.component';
     UsersComponent,
     ImageModalComponent,
     OthersComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,

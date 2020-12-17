@@ -1,0 +1,49 @@
+<body>
+	<!-- main -->
+	<div class="main-w3layouts wrapper">
+        <div class="app-name">
+            <span class="photo">Photo</span>
+            <span class="nimbus">Nimbus</span>
+        </div>
+        <br />
+		<div class="main-agileinfo">
+			<div class="agileits-top">
+				<form #registerform="ngForm" (ngSubmit)="register()">
+                    <input class="first_name" type="text" placeholder="First Name" name="first_name" required="" [(ngModel)]="first_name" />
+                    <input class="last_name" type="text" placeholder="Last Name" name="last_name" required="" [(ngModel)]="last_name" />
+					<input class="username" type="text" placeholder="Username" name="username" required="" [(ngModel)]="username" />
+					<input class="text email" type="email" name="email" placeholder="Email" required="" [(ngModel)]="email" />
+					<input class="password" type="password" placeholder="Password" name="password" [(ngModel)]="password" />
+					<input class="password" type="password" placeholder="Confirm Password" name="password2" required="" [(ngModel)]="password2" />
+					<div class="wthree-text">
+						<label class="anim">
+							<input type="checkbox" class="checkbox" required="">
+							<span>I Agree To The Terms & Conditions</span>
+						</label>
+						<div class="clear"> </div>
+					</div>
+					<input type="submit" class= "submit" value="SIGNUP">
+				</form>
+				<p>Don't have an Account? <a href="#"> Login Now!</a></p>
+			</div>
+		</div>
+		<!-- copyright -->
+		<div class="colorlibcopy-agile">
+			<p>© 2018 Colorlib Signup Form. All rights reserved | Design by <a href="https://colorlib.com/" target="_blank">Colorlib</a></p>
+		</div>
+		<!-- //copyright -->
+		<ul class="colorlib-bubbles">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+	<!-- //main -->
+</body>
